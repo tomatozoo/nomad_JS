@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/style.css"/>
         <title>Document</title>
     </head>
     <body>
-        <form id="login-form">
+        <h2 id="clock">00:00</h2>
+        <form class="hidden" id="login-form">
             <input required maxlength="15" type="text" placeholder="What is your name?"/>
-            <button>Log In</button>
+            <input type="submit" value="Log In"/>
         </form>
         <h1 class="hidden" id="greeting">Hi</h1>
-        <h2 id="clock">00:00</h2>
+        <form id="todo-form">
+            <input type="text" placeholder="Write a to-do and Press Enter"/>
+        </form>
+        <ul id="todo-list"></ul>
         <div id="quote">
-            <h2>00:00</h2>
-            <h2>00:00</h2>
+            <span></span>
+            <span></span>
         </div>
         <a href="https://tomatolife.tistory.com">Go to my blog</a>
         <script src="js/greeting.js"></script>
         <script src="js/clock.js"></script>
-        <script src="js/quotes.js"></script>        <script src="js/quotes.js"></script>
+        <script src="js/quotes.js"></script>        
         <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
     </body>
 </html>
